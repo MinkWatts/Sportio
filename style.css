@@ -3,11 +3,11 @@ body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
-:root {
+/* :root {
     --navy: #2b3452;
     --berry: #b94a5a;
     --grey-text: #6c757d;
-}
+} */
 .custom-nav {
     padding: 15px 0;
     background: #fff;
@@ -19,7 +19,7 @@ body {
 .brand-text {
     font-weight: 800;
     font-size: 1.3rem;
-    color: var(--navy);
+    color: #2b3452;
     text-decoration: none;
 }
 .search-wrapper { position: relative; width: 100%; max-width: 280px; }
@@ -45,7 +45,7 @@ body {
     margin-bottom: 0.5rem;
     font-weight: 510;
     font-size: 0.85rem;
-    color: var(--navy);
+    color: #2b3452;
   
 }
 
@@ -53,15 +53,15 @@ body {
     font-size: 2.7rem;
     font-weight: 790;
     line-height: 1.1;
-    color: var(--navy);
+    color: #2b3452;
     margin-bottom: 1rem;
 
 }
-.accent-text { color: var(--berry); }
+.accent-text { color: #b94a5a;; }
 
 .hero-subtext {
     font-size: 0.89rem;
-    color: var(--grey-text);
+    color: #6c757d;
     margin-bottom: 1.5rem;
     line-height: 1.5;
 }
@@ -69,12 +69,12 @@ body {
 .hero-price {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--navy);
+    color: #2b3452;
     margin-bottom: 1.5rem;
 }
 
 .btn-join-now {
-    background-color: var(--navy);
+    background-color: #2b3452;
     color: #fff;
     display: inline-block;
      padding: 12px 35px;
@@ -169,7 +169,7 @@ body {
 .buy-link {
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--grey-text);
+    color: #6c757d;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
