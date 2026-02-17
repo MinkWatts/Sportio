@@ -3,11 +3,6 @@ body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
 }
-/* :root {
-    --navy: #2b3452;
-    --berry: #b94a5a;
-    --grey-text: #6c757d;
-} */
 .custom-nav {
     padding: 15px 0;
     background: #fff;
