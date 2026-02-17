@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportio | Designer Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg custom-nav">
+    <div class="container px-md-5">
+
+        <!-- Brand -->
+        <a class="navbar-brand brand-text" href="#">Sportio</a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler menu-btn" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Collapsible Content -->
+        <div class="collapse navbar-collapse text-center" id="mainNavbar">
+
+            <!-- Center Search (always centered on mobile) -->
+            <div class="w-100 d-flex justify-content-center my-3">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Nav Links (center on mobile, right on desktop) -->
+            <div class="nav-links-group d-flex flex-column flex-lg-row 
+                        align-items-center justify-content-center 
+                        justify-content-lg-end w-100 gap-3">
+                <a href="#" class="nav-item-custom">Home</a>
+                <a href="#" class="nav-item-custom">About</a>
+                <a href="#" class="nav-item-custom">Cart</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+
+<section class="hero-section">
+    <div class="container px-md-5">
+        <div class="row align-items-center">
+            <div class="col-lg-5 hero-text-content" data-aos="fade-right">
+
+                <p class="hero-label">Sporty style, elevated</p>
+                <h1 class="hero-headline">Elevate your <span class="accent-text">workout</span> with designer style.</h1>
+                <p class="hero-subtext">Lorem ipsum dolor sit amet consectetur. Sit mattis donec mi bibendum integer rutrum nisi.</p>
+                <div class="hero-price">$200.00</div>
+                <a href="#" class="btn-join-now">JOIN NOW</a>
+            </div>
+           <div class="col-lg-7" data-aos="fade-left">
+
+                <div class="image-stack-container">
+                    <img src="images/girlone.png" class="img-athlete">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--second-section-->
+<section class="brand-section">
+    <div class="container">
+        <div class="brand-capsule" data-aos="zoom-in">
+
+            <img src="images/mizuno 1.png" alt="Mizuno">
+            <img src="images/puma-logo-icon 1.png" alt="Puma">
+            <img src="images/adidas-icon 1.png" alt="Adidas">
+            <img src="images/nike.png" alt="Nike">
+            <img src="images/Reebok.png" alt="Reebok">
+        </div>
+    </div>
+</section>
+
+<!--section 3-->
+<section class="gear-section">
+    <div class="container text-center">
+      <div class="gear-image-wrapper" data-aos="fade-up">
+
+            <img src="images/section3.png" alt="Athletic Gear" class="img-fluid">
+        </div>
+<div class="gear-content" data-aos="fade-up" data-aos-delay="200">
+
+            <h2 class="gear-title">Get fit in style with athletic wear!</h2>
+            <p class="gear-text">
+                Lorem ipsum dolor sit amet consectetur. Sed tincidunt eget morbi congue nunc enim. 
+                Venenatis sapien sit eget urna. Egestas volutpat purus scelerisque at.
+            </p>
+            <a href="#" class="buy-link">BUY NOW &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<!--cards-->
+<section class="deals-section">
+    <div class="container">
+        <h2 class="section-title text-center">Best nike deals!</h2>
+        
+       <div class="shoe-grid" data-aos="fade-up">
+    
+    <div class="shoe-card" data-aos="zoom-in-up" data-aos-delay="100">
+        <div class="shoe-img-box">
+            <img src="images/shoes1.png" alt="Nike Infinity React 3">
+            <div class="badge-container">
+                <span class="rating-badge">⭐ 4.8</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+            </div>
+        </div>
+        <div class="shoe-info">
+            <h5>Nike Infinity React 3</h5>
+            <div class="price-row">
+                <span>$180</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shoe-card" data-aos="zoom-in-up" data-aos-delay="200">
+        <div class="shoe-img-box">
+            <img src="images/shoes2.png" alt="Nike Pegasus 39">
+            <div class="badge-container">
+                <span class="rating-badge">⭐ 4.8</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+            </div>
+        </div>
+        <div class="shoe-info">
+            <h5>Nike Pegasus 39</h5>
+            <div class="price-row">
+                <span>$180</span>
+                <button class="wishlist-btn wishlist-active">❤</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shoe-card" data-aos="zoom-in-up" data-aos-delay="300">
+        <div class="shoe-img-box">
+            <img src="images/shoes3.png" alt="The Hotel">
+            <div class="badge-container">
+                <span class="rating-badge">⭐ 4.8</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+            </div>
+        </div>
+        <div class="shoe-info">
+            <h5>The Hotel</h5>
+            <div class="price-row">
+                <span>$180</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="shoe-card" data-aos="zoom-in-up" data-aos-delay="400">
+        <div class="shoe-img-box">
+            <img src="images/shoes4.png" alt="The Hotel">
+            <div class="badge-container">
+                <span class="rating-badge">⭐ 4.8</span>
+                <span class="exclusive-badge">EXCLUSIVE</span>
+            </div>
+        </div>
+        <div class="shoe-info">
+            <h5>The Hotel</h5>
+            <div class="price-row">
+                <span>$180</span>
+                <button class="wishlist-btn">♡</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+        
+        <div class="text-end mt-4">
+            <a href="#" class="view-more">VIEW MORE &rarr;</a>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bundle-section">
+    <div class="container bundle-flex">
+       <div class="bundle-image image-hover-box"
+     data-aos="zoom-in-right"
+     data-aos-duration="1200"
+     data-aos-easing="ease-out-cubic"
+     data-aos-once="true">
+
+    <img src="images/lastsecond.png" alt="Sports Bundle" class="img-fluid hover-img">
+</div>
+
+      <div class="bundle-content" data-aos="fade-left">
+
+            <h2 class="bundle-title">Sports bundle deal!</h2>
+            <h4 class="bundle-subtitle">Upgrade your workout wardrobe.</h4>
+            <p class="bundle-description">
+                Lorem ipsum dolor sit amet consectetur. Massa quis natoque sit quam. 
+                Eros non pellentesque elit tortor id euismod habitant cras neque. 
+                Sed suspendisse id in ultrices adipiscing id adipiscing.
+            </p>
+            <a href="#" class="btn-explore">Explore More &rarr;</a>
+        </div>
+    </div>
+</section>
+
+<section class="bundle-section">
+    <div class="container bundle-flex">
+        
+        <div class="bundle-content" data-aos="fade-right">
+
+            <h2 class="bundle-title">Sports bundle deal!</h2>
+            <h4 class="bundle-subtitle">Upgrade your workout wardrobe.</h4>
+            <p class="bundle-description">
+                Lorem ipsum dolor sit amet consectetur. Massa quis natoque sit quam. 
+                Eros non pellentesque elit tortor id euismod habitant cras neque. 
+            </p>
+            <a href="#" class="btn-explore">Explore More &rarr;</a>
+        </div>
+
+        <div class="bundle-image image-hover-box"
+     data-aos="zoom-in-right"
+     data-aos-duration="1200"
+     data-aos-easing="ease-out-cubic"
+     data-aos-once="true">
+
+    <img src="images/lastimage.png" alt="Sports Bundle" class="img-fluid hover-img">
+</div>
+  </div>
+</section>
+<footer class="main-footer" data-aos="fade-up">
+
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3 class="footer-logo">Sportio</h3>
+                <p class="footer-about">
+                    886 Curt Locks, New Davonteside, <br>
+                    Central African Republic 95222
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Latest website</h4>
+                <ul>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Gloves</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div class="social-box">
+                    <img src="images/logo.png" alt="Social Media" class="social-img">
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sportio. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,   // animation speed
+    once: true,       // animation only once
+    offset: 100       // trigger animation earlier
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
