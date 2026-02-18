@@ -2,6 +2,7 @@ body {
     background-color: #ffffff;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    justify-content: center;
 }
 .custom-nav {
     padding: 15px 0;
@@ -31,8 +32,11 @@ body {
 
 .nav-links-group { gap: 12px; }
 .nav-item-custom { text-decoration: none; color: #374151; font-weight: 500; font-size: 0.85rem; }
+.nav-item-custom:hover {
+    color: #e5a07d !important;
+}
 .nav-divider { color: #d1d5db; margin: 0 5px; }
-.menu-btn { background: none; border: none; margin-left: 15px; cursor: pointer; }
+.menu-btn { background: none; border: none; margin-left: 5px; cursor: pointer; }
 .hero-section { padding: 40px 0; }
 .hero-text-content { max-width: 100%; }
 
@@ -67,6 +71,40 @@ body {
     color: #2b3452;
     margin-bottom: 1.5rem;
 }
+.view-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    text-decoration: none;   
+    color: #8c8c8c;       
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* Arrow smooth animation */
+.view-more .arrow {
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.view-more:hover {
+    color: #e5a07d;
+    transform: translateX(5px);
+}
+
+.view-more:hover .arrow {
+    transform: translateX(6px);
+}
+
+/* Click effect (like hover + press feel) */
+.view-more:active {
+    color: #e5a07d;
+    transform: translateX(5px) scale(0.95);
+}
+
+
 
 .btn-join-now {
     background-color: #2b3452;
@@ -77,6 +115,12 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 0.8rem;
+    transition: all 0.3s ease;
+}
+.btn-join-now:hover, .btn-join-now.active-click {
+    background-color: #b94a5a;
+    transform: scale(1.05);    
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .image-stack-container {
@@ -108,14 +152,15 @@ body {
 .brand-capsule {
     background: #fff;
     border-radius: 100px;
-    padding: 24px 90px;
+    padding: 20px 40px; 
     align-items: center;
-    gap: 80px;
+    gap: 40px;          
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-    max-width: 1800px;
+    max-width: 1200px;  
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;   
 }
 
 .brand-capsule img {
@@ -165,7 +210,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #1a1a1a;
-    font-family: 'Inter', sans-serif; /* Or any clean sans-serif */
+    font-family: 'Inter', sans-serif; 
     font-size: 0.85rem;
     font-weight: 600;
     letter-spacing: 0.15em;
@@ -183,6 +228,9 @@ body {
 .btn-elegant:hover {
     background-color: #1a1a1a;
     color: #fff;
+    background-color: #e5a07d ; /* Color change */
+    transform: scale(1.05);    /* Thoda bada dikhega */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .btn-elegant:hover .arrow {
@@ -228,11 +276,18 @@ body {
         align-items: center;
     }
     .brand-section{
-        align-items:center
+        align-items:center;
+        gap: 20px;
     }
 
     .brand-capsule img {
-        height: 40px;      
+        height: 40px; 
+
+    }
+}
+@media (min-width: 992px) {
+    .brand-capsule{
+        gap: 100px;
     }
 }
 .deals-section { padding: 60px 0; }
@@ -325,7 +380,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.wishlist-active { background: #ff4d4d; color: white; }
+.wishlist-active { background: #e5a07d ; color: white; }
 
 @media (max-width: 576px) {
     .shoe-card { width: 100%; }
@@ -343,8 +398,9 @@ body {
     flex: 1; 
 }
 .bundle-image img {
-    width: 120%;
-    height: 110%;
+    width: 100%;      
+    height: auto;     
+    display: block;
 }
 .bundle-content {
     flex: 1; 
@@ -442,19 +498,6 @@ body {
     border-radius: 14px;
 }
 
-.hover-img {
-    transform: scale(0.95);
-    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
-                box-shadow 0.6s ease,
-                filter 0.4s ease;
-    will-change: transform;
-}
-.image-hover-box:hover .hover-img {
-    transform: scale(1.08) translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-    filter: brightness(1.05);
-}
-
 .main-footer {
     padding: 60px 0 20px;
     background-color: #fff;
@@ -513,4 +556,14 @@ body {
     text-align: center;
     font-size: 0.8rem;
     color: #999;
+}
+.social-icon-link {
+    color: #1a1a1a;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon-link:hover {
+    color: #e5a07d ;
 }

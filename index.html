@@ -7,12 +7,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <link rel="shortcut icon" href="images/sporticofav.png" type="image/x-icon">
 
 </head>
 <body>
 <nav class="navbar navbar-expand-lg custom-nav">
-    <div class="container px-md-5">
+    <div class="container-fluid">
         <a class="navbar-brand brand-text" href="#">Sportio</a>
         <button class="navbar-toggler menu-btn" type="button"
             data-bs-toggle="collapse"
@@ -20,11 +24,8 @@
             aria-controls="mainNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+           
+          <img src="images/threelines.png">
         </button>
         <div class="collapse navbar-collapse text-center" id="mainNavbar">
 
@@ -44,6 +45,7 @@
                 <a href="#" class="nav-item-custom">Home</a>
                 <a href="#" class="nav-item-custom">About</a>
                 <a href="#" class="nav-item-custom">Cart</a>
+                <img src="images/threelines.png">
             </div>
 
         </div>
@@ -109,7 +111,7 @@
         <div class="shoe-img-box">
             <img src="images/shoes1.png" alt="Nike Infinity React 3">
             <div class="badge-container">
-                <span class="rating-badge">⭐ 4.8</span>
+                <span class="rating-badge"><i class="fa-solid fa-star" style="color: gold;"></i> 4.8</span>
                 <span class="exclusive-badge">EXCLUSIVE</span>
             </div>
         </div>
@@ -126,7 +128,7 @@
         <div class="shoe-img-box">
             <img src="images/shoes2.png" alt="Nike Pegasus 39">
             <div class="badge-container">
-                <span class="rating-badge">⭐ 4.8</span>
+                <span class="rating-badge"><i class="fa-solid fa-star" style="color: gold;"></i>4.8</span>
                 <span class="exclusive-badge">EXCLUSIVE</span>
             </div>
         </div>
@@ -143,7 +145,7 @@
         <div class="shoe-img-box">
             <img src="images/shoes3.png" alt="The Hotel">
             <div class="badge-container">
-                <span class="rating-badge">⭐ 4.8</span>
+                <span class="rating-badge"><i class="fa-solid fa-star" style="color: gold;"></i> 4.8</span>
                 <span class="exclusive-badge">EXCLUSIVE</span>
             </div>
         </div>
@@ -160,7 +162,7 @@
         <div class="shoe-img-box">
             <img src="images/shoes4.png" alt="The Hotel">
             <div class="badge-container">
-                <span class="rating-badge">⭐ 4.8</span>
+                <span class="rating-badge"><i class="fa-solid fa-star" style="color: gold;"></i> 4.8</span>
                 <span class="exclusive-badge">EXCLUSIVE</span>
             </div>
         </div>
@@ -176,11 +178,19 @@
 </div>
 
         
-       <div class="button-container" >
-        <span >VIEW MORE</span>
-        <svg class="arrow" width="18" height="10" viewBox="0 0 18 10"><path d="M13 1L17 5L13 9M1 5H17" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+<div class="button-container">
+    <a href="#more" class="view-more">
+        <span>VIEW MORE</span>
+        <svg class="arrow" width="18" height="10" viewBox="0 0 18 10">
+            <path d="M13 1L17 5L13 9M1 5H17" 
+                  stroke="currentColor" 
+                  stroke-width="1.5" 
+                  fill="none"/>
+        </svg>
     </a>
 </div>
+
+
     </div>
 </section>
 <section class="bundle-section">
@@ -203,7 +213,7 @@
                 Eros non pellentesque elit tortor id euismod habitant cras neque. 
                 Sed suspendisse id in ultrices adipiscing id adipiscing.
             </p>
-            <a href="#" class="btn-explore">Explore More &rarr;</a>
+            <a href="#" class="btn-join-now">Explore More &rarr;</a>
         </div>
     </div>
 </section>
@@ -219,7 +229,7 @@
                 Lorem ipsum dolor sit amet consectetur. Massa quis natoque sit quam. 
                 Eros non pellentesque elit tortor id euismod habitant cras neque. 
             </p>
-            <a href="#" class="btn-explore">Explore More &rarr;</a>
+            <a href="#" class="btn-join-now">Explore More &rarr;</a>
         </div>
 
         <div class="bundle-image image-hover-box"
@@ -262,11 +272,13 @@
                 </ul>
             </div>
 
-            <div class="footer-col">
+            <div class="footer-col" style="text-align: center;">
                 <h4>Social</h4>
-                <div class="social-box">
-                    <img src="images/logo.png" alt="Social Media" class="social-img">
-                </div>
+                <div class="social-links px-md-3 mt-3 mt-md-0">
+                <a href="#" class="social-icon-link mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon-link mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon-link mx-2"><i class="fab fa-twitter"></i></a>
+            </div>
             </div>
         </div>
         
